@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanches Deliciosos</title>
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #fff8f0; color: #333; }
+        header { background: #ff7f50; color: white; padding: 20px 10px; text-align: center; border-bottom: 5px solid #ff5722; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .produto { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+        .produto img { width: 100%; height: 200px; object-fit: cover; }
+        .produto-content { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .btn { background: #ff7f50; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-size: 1rem; margin: 20px auto; display: block; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Lanches Deliciosos</h1>
+    <p>Escolha e peça já pelo WhatsApp!</p>
+</header>
+<div class="container">
+    <div class="produto"><img src="img/lasanha.jpg" alt="Lasanha"><div class="produto-content"><h2>Lasanha</h2><p>R$ 25,00</p></div></div>
+    <div class="produto"><img src="img/quinche.jpg" alt="Quiche"><div class="produto-content"><h2>Quiche</h2><p>R$ 18,00</p></div></div>
+    <div class="produto"><img src="img/panqueca.jpg" alt="Panquecas"><div class="produto-content"><h2>Panquecas</h2><p>R$ 20,00</p></div></div>
+    <div class="produto"><img src="img/brownie.jpg" alt="Brownie"><div class="produto-content"><h2>Brownie</h2><p>R$ 15,00</p></div></div>
+</div>
+<button class="btn">Finalizar Pedido</button>
+</body>
+</html>
