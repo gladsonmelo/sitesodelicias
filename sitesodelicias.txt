@@ -101,43 +101,36 @@
   </header>
 
   <div class="container">
-    <!-- Produto 1 -->
     <div class="produto">
-      <img src="img/lasanha.jpg" alt="Lasanha caseira com molho e queijo gratinado">
+      <img src="img/lasanha.jpg" alt="lasanha caseira com molho e queijo gratinado">
       <div class="produto-content">
         <h2>Lasanha</h2>
         <p>R$ 25,00</p>
-        <input class="qtd" type="number" min="0" value="0" data-nome="Lasanha" data-preco="25">
+        <input class="qtd" type="number" min="0" value="0" data-nome="lasanha" data-preco="25">
       </div>
     </div>
-
-    <!-- Produto 2 -->
     <div class="produto">
-      <img src="img/quiche.jpg" alt="Quiche artesanal recheado">
+      <img src="img/quinche.jpg" alt="quiche recheado artesanal">
       <div class="produto-content">
         <h2>Quiche</h2>
         <p>R$ 18,00</p>
-        <input class="qtd" type="number" min="0" value="0" data-nome="Quiche" data-preco="18">
+        <input class="qtd" type="number" min="0" value="0" data-nome="quiche" data-preco="18">
       </div>
     </div>
-
-    <!-- Produto 3 -->
     <div class="produto">
-      <img src="img/panqueca.jpg" alt="Panquecas recheadas e gratinadas">
+      <img src="img/panqueca.jpg" alt="panquecas recheadas e gratinadas">
       <div class="produto-content">
         <h2>Panquecas</h2>
         <p>R$ 20,00</p>
-        <input class="qtd" type="number" min="0" value="0" data-nome="Panquecas" data-preco="20">
+        <input class="qtd" type="number" min="0" value="0" data-nome="panquecas" data-preco="20">
       </div>
     </div>
-
-    <!-- Produto 4 -->
     <div class="produto">
-      <img src="img/brownie.jpg" alt="Brownie de chocolate com cobertura">
+      <img src="img/brownie.jpg" alt="brownie de chocolate com cobertura">
       <div class="produto-content">
         <h2>Brownie</h2>
         <p>R$ 15,00</p>
-        <input class="qtd" type="number" min="0" value="0" data-nome="Brownie" data-preco="15">
+        <input class="qtd" type="number" min="0" value="0" data-nome="brownie" data-preco="15">
       </div>
     </div>
   </div>
@@ -173,9 +166,13 @@
       }
 
       mensagem += `%0ATotal: R$ ${total.toFixed(2)}`;
-      const url = `https://wa.me/5585996944822?text=${mensagem}`;
-
+      const numero = "55 85996944822";
+      const url = `https://wa.me/${5585996944822}?text=${mensagem}`;
+      
+      // Limpar o carrinho após enviar o pedido
       limparCarrinho();
+
+      // Abrir WhatsApp após a limpeza
       window.open(url, '_blank');
     }
 
