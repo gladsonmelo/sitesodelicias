@@ -1,187 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lanches Deliciosos</title>
   <meta name="description" content="Lanches caseiros e deliciosos! Peça lasanhas, brownies, quiches e mais pelo WhatsApp.">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fff8f0;
-      color: #333;
-    }
-
-    header {
-      background: #ff7f50;
-      color: white;
-      padding: 20px 10px;
-      text-align: center;
-      border-bottom: 5px solid #ff5722;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .produto {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      display: flex;
-      flex-direction: column;
-    }
-
-    .produto img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    .produto-content {
-      padding: 15px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
-    }
-
-    .qtd {
-      width: 60px;
-      padding: 5px;
-      font-size: 1rem;
-      margin: 10px auto;
-      text-align: center;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-
-    .btn {
-      background: #ff7f50;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-size: 1rem;
-      margin-top: 15px;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    .btn:hover {
-      background: #ff5722;
-    }
-
-    .btns-container {
-      margin: 40px auto;
-      text-align: center;
-    }
-
-    .btns-container button {
-      margin: 10px;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>Lanches Deliciosos</h1>
-    <p>Escolha a quantidade e finalize o pedido pelo WhatsApp!</p>
+    <p>Sabor caseiro com carinho!</p>
   </header>
 
-  <div class="container">
-    <div class="produto">
-      <img src="img/lasanha.jpg" alt="lasanha caseira com molho e queijo gratinado">
-      <div class="produto-content">
-        <h2>Lasanha</h2>
-        <p>R$ 25,00</p>
-        <input class="qtd" type="number" min="0" value="0" data-nome="lasanha" data-preco="25">
+  <main>
+    <section class="produtos">
+      <h2>Nossos Lanches</h2>
+
+      <div class="produto">
+        <img src="img/lasanha.jpg" alt="Lasanha caseira">
+        <h3>Lasanha</h3>
+        <p>Lasanha recheada com molho caseiro e queijo gratinado.</p>
+        <a class="botao-whats" href="https://wa.me/5585987451317?text=Quero%20uma%20lasanha!" target="_blank">Pedir pelo WhatsApp</a>
       </div>
-    </div>
-    <div class="produto">
-      <img src="img/quinche.jpg" alt="quiche recheado artesanal">
-      <div class="produto-content">
-        <h2>Quiche</h2>
-        <p>R$ 18,00</p>
-        <input class="qtd" type="number" min="0" value="0" data-nome="quiche" data-preco="18">
+
+      <div class="produto">
+        <img src="img/brownie.jpg" alt="Brownie de chocolate">
+        <h3>Brownie</h3>
+        <p>Brownie de chocolate crocante por fora e macio por dentro.</p>
+        <a class="botao-whats" href="https://wa.me/5585987451317?text=Quero%20um%20brownie!" target="_blank">Pedir pelo WhatsApp</a>
       </div>
-    </div>
-    <div class="produto">
-      <img src="img/panqueca.jpg" alt="panquecas recheadas e gratinadas">
-      <div class="produto-content">
-        <h2>Panquecas</h2>
-        <p>R$ 20,00</p>
-        <input class="qtd" type="number" min="0" value="0" data-nome="panquecas" data-preco="20">
+
+      <div class="produto">
+        <img src="img/quiche.jpg" alt="Quiche de queijo">
+        <h3>Quiche</h3>
+        <p>Quiche de queijo cremoso com massa leve.</p>
+        <a class="botao-whats" href="https://wa.me/5585987451317?text=Quero%20um%20quiche!" target="_blank">Pedir pelo WhatsApp</a>
       </div>
-    </div>
-    <div class="produto">
-      <img src="img/brownie.jpg" alt="brownie de chocolate com cobertura">
-      <div class="produto-content">
-        <h2>Brownie</h2>
-        <p>R$ 15,00</p>
-        <input class="qtd" type="number" min="0" value="0" data-nome="brownie" data-preco="15">
-      </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <div class="btns-container">
-    <button class="btn" onclick="finalizarPedido()">Finalizar Pedido</button>
-    <button class="btn" onclick="limparCarrinho()">Limpar Carrinho</button>
-  </div>
+  <footer>
+    <p>&copy; 2025 Lanches Deliciosos. Todos os direitos reservados.</p>
+    <p>Instagram: <a href="https://instagram.com/papelaria_e_servicos" target="_blank">@papelaria_e_servicos</a></p>
+    <p>Email: <a href="mailto:papelariaeservicos2021@gmail.com">papelariaeservicos2021@gmail.com</a></p>
+  </footer>
 
-  <script>
-    function finalizarPedido() {
-      const campos = document.querySelectorAll('.qtd');
-      let mensagem = "Olá! Gostaria de fazer um pedido:%0A";
-      let total = 0;
-      let temPedido = false;
-
-      campos.forEach(campo => {
-        const qtd = parseInt(campo.value);
-        const nome = campo.getAttribute('data-nome');
-        const preco = parseFloat(campo.getAttribute('data-preco'));
-
-        if (qtd > 0) {
-          const subtotal = qtd * preco;
-          total += subtotal;
-          mensagem += `• ${qtd}x ${nome} = R$ ${subtotal.toFixed(2)}%0A`;
-          temPedido = true;
-        }
-      });
-
-      if (!temPedido) {
-        alert("Escolha pelo menos um item para finalizar o pedido.");
-        return;
-      }
-
-      mensagem += `%0ATotal: R$ ${total.toFixed(2)}`;
-      const numero = "55 85996944822";
-      const url = `https://wa.me/${5585996944822}?text=${mensagem}`;
-      
-      // Limpar o carrinho após enviar o pedido
-      limparCarrinho();
-
-      // Abrir WhatsApp após a limpeza
-      window.open(url, '_blank');
-    }
-
-    function limparCarrinho() {
-      const campos = document.querySelectorAll('.qtd');
-      campos.forEach(campo => {
-        campo.value = 0;
-      });
-    }
-  </script>
+  <!-- Botão flutuante do WhatsApp -->
+  <a href="https://wa.me/5585987451317" target="_blank" class="whatsapp-fixo">
+    <img src="img/whatsapp-icon.png" alt="Fale no WhatsApp">
+  </a>
 </body>
 </html>
