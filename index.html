@@ -7,7 +7,10 @@
   <meta name="description" content="Lanches caseiros e deliciosos! Peça lasanhas, brownies, quiches e mais pelo WhatsApp.">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+ HEAD
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ c46a2866474a90e596ad34089781693e2f61815f
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -41,11 +44,14 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
       display: flex;
       flex-direction: column;
+<<<<<<< HEAD
       transition: transform 0.3s ease;
     }
 
     .produto:hover {
       transform: scale(1.03);
+=======
+>>>>>>> c46a2866474a90e596ad34089781693e2f61815f
     }
 
     .produto img {
@@ -98,6 +104,7 @@
     .btns-container button {
       margin: 10px;
     }
+<<<<<<< HEAD
 
     .whatsapp-fixed {
       position: fixed;
@@ -111,6 +118,8 @@
     .whatsapp-fixed:hover {
       transform: scale(1.1);
     }
+=======
+>>>>>>> c46a2866474a90e596ad34089781693e2f61815f
   </style>
 </head>
 <body>
@@ -120,6 +129,7 @@
   </header>
 
   <div class="container">
+<<<<<<< HEAD
     <div class="produto">
       <img src="img/lasanha.jpg" alt="lasanha caseira com molho e queijo gratinado">
       <div class="produto-content">
@@ -182,6 +192,45 @@
         <h2><i class="fas fa-corn"></i> bolo de milho</h2>
         <p>R$ 20,00</p>
         <input class="qtd" type="number" min="0" value="0" data-nome="bolo de milho" data-preco="20">
+=======
+    <!-- Produto 1 -->
+    <div class="produto">
+      <img src="img/lasanha.jpg" alt="Lasanha caseira com molho e queijo gratinado">
+      <div class="produto-content">
+        <h2>Lasanha</h2>
+        <p>R$ 25,00</p>
+        <input class="qtd" type="number" min="0" value="0" data-nome="Lasanha" data-preco="25">
+      </div>
+    </div>
+
+    <!-- Produto 2 -->
+    <div class="produto">
+      <img src="img/quiche.jpg" alt="Quiche artesanal recheado">
+      <div class="produto-content">
+        <h2>Quiche</h2>
+        <p>R$ 18,00</p>
+        <input class="qtd" type="number" min="0" value="0" data-nome="Quiche" data-preco="18">
+      </div>
+    </div>
+
+    <!-- Produto 3 -->
+    <div class="produto">
+      <img src="img/panqueca.jpg" alt="Panquecas recheadas e gratinadas">
+      <div class="produto-content">
+        <h2>Panquecas</h2>
+        <p>R$ 20,00</p>
+        <input class="qtd" type="number" min="0" value="0" data-nome="Panquecas" data-preco="20">
+      </div>
+    </div>
+
+    <!-- Produto 4 -->
+    <div class="produto">
+      <img src="img/brownie.jpg" alt="Brownie de chocolate com cobertura">
+      <div class="produto-content">
+        <h2>Brownie</h2>
+        <p>R$ 15,00</p>
+        <input class="qtd" type="number" min="0" value="0" data-nome="Brownie" data-preco="15">
+>>>>>>> c46a2866474a90e596ad34089781693e2f61815f
       </div>
     </div>
   </div>
@@ -191,10 +240,13 @@
     <button class="btn" onclick="limparCarrinho()">Limpar Carrinho</button>
   </div>
 
+<<<<<<< HEAD
   <a href="https://wa.me/5585996944822" target="_blank" class="whatsapp-fixed" aria-label="Contato via WhatsApp">
     <img src="img/whatsapp.png" alt="WhatsApp">
   </a>
 
+=======
+>>>>>>> c46a2866474a90e596ad34089781693e2f61815f
   <script>
     function finalizarPedido() {
       const campos = document.querySelectorAll('.qtd');
